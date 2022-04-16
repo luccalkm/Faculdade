@@ -1,4 +1,5 @@
-void q3()
+#include <stdio.h>
+int main()
 {
     int i, numero, auxMaior = 0, auxMenor = 0;
 
