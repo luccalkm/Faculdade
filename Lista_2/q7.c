@@ -22,6 +22,5 @@ void q7()
         {
             i = contador;
         }
-        printf("%d, %f, %f", numeroConsumidor[i], precoKW[i], qtdKW[i]);
     }
 }
