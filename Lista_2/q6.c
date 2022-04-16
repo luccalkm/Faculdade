@@ -1,4 +1,5 @@
-void q6()
+#include <stdio.h>
+int main()
 {
     int idade, maioresIdade = 0, somaIdade = 0, mediaIdade, cont = 0;
 
