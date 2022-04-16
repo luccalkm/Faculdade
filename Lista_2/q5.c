@@ -1,4 +1,5 @@
-void q5()
+#include <stdio.h>
+int main()
 {
 
     // Sexo do entrevistado; Resposta de "Sim" ou "Não"; 10 pessoas entrevistadas
