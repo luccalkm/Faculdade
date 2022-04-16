@@ -1,4 +1,5 @@
-void q1()
+#include <stdio.h>
+int main()
 {
     int numero, i = 1;
 
