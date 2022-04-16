@@ -1,4 +1,5 @@
-void q2()
+#include <stdio.h>
+int main()
 {
     int a, soma = 0;
 
