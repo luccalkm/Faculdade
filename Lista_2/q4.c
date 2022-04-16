@@ -1,4 +1,5 @@
-void q4()
+#include <stdio.h>
+int main()
 {
     // Escrever a maior e menor altura do grupo (de 5);
     // A média da altura dos homens;
