@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Lista 01 HTML // S.I. Manhã - Turma B</title>
+    <style>
+        /* MUDANÇAS GERAIS */
+        body{
+            display: grid;
+            justify-content: center;
+        }
+        /* FIM MUDANÇAS GERAIS */
+        /* MUDANÇAS QUESTÃO 2 - TABELA */
+        .q2 *{
+            text-align: center;
+        }
+        table .corAmarela{ 
+            background: yellow;
+        }
+        table .corLaranja{ 
+            background: darkorange;
+        }
+        /* FIM QUESTÃO 2 */
+        /* MUDANÇAS NA QUESTÃO 3 - FORMS */
+        #form{ 
+            font-weight: bold; 
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #form #pTitle{
+            background: rgb(185, 173, 0);
+        }
+        .login{
+            margin-right: 144.33px;
+        }
+        .password{
+            margin-right: 106.36px
+        }
+        .status{
+            margin-right: 136.03px;
+        }
+        .tipo{
+            margin-right: 155.02px;
+        }
+        .dataCriacao{
+            margin-right: 79.73px;
+        }
+        .perfil{
+            margin-right: 145.56px;
+        }
+        .pObserv{
+            display: flex;
+            align-items: center;
+        }
+        .observ{
+            margin-right: 92.53px;
+        }
+        .pModulo{
+            display: block; 
+            width:100%; 
+            height: 100%;
+        }
+        .main-modulo{
+            display: flex; 
+            width:100%; 
+            height: 100%;
+        }
+        .modulo{
+             margin-right: 122.17px; 
+             line-height: 100px;
+        }
+        .checkboxes{
+            display: block; 
+            width: 350px; 
+            line-height: 50px;
+        }
+        /* FIM QUESTÃO 3 */
+    </style>
+</head>
+
+<body>
+    <!-- Inicio questão 1 -->
+    <div class="q1">
+    <h1>Questão 1:</h1>
+    <center>
+        <p><img href="#" alt="tem_imagem_nenhuma.png"></img><br>O que você está vendo?</p>
+    </center>
+    <p>a) Cachorro<br>
+        b) Chocolate<br>
+        c) Moto<br>
+        d) Carro</p>
+    <p style="margin-left: 20px;">Clique <a href="https://www.google.com.br/">aqui</a> para procurar.</p>
+    </div>
+    <!-- Fim questão 1 -->
+
+    <br><br><br><br><br>
+
+    <!-- Inicio questão 2 -->
+    <div class="q2">
+    <h1>Questão 2:</h1>
+    <table border="black">
+        <tr>
+            <th colspan=20 style="background: red;">
+                Venha Morar em Nossos Belos Residenciais - Viver Serra
+            </th>
+        </tr>
+        <tr>
+            <th colspan=9 class="corAmarela" style="text-align: left;">
+                Apartamentos
+            </th>
+            <th colspan=2 class="corLaranja">Localização</th>
+            <td colspan=2 class="corLaranja">Laranjeiras-<br> 4min.</td>
+            <td colspan=2 class="corLaranja"> Manguinhos-<br> 2min.</td>
+            <td colspan=5 class="corLaranja">Vitoria- 8min.</td>
+        </tr>
+        <tr>
+            <td colspan=3 class="corAmarela"><center>2</center>Quartos</td>
+            <td colspan=3 class="corAmarela"><center>3</center>Quartos</td>
+            <td colspan=3 class="corAmarela"><center>2</center>Quartos</td>
+            <th colspan=11 class="corLaranja"><center>Corretor On-Line</center></th>
+        </tr>
+        <tr>
+            <td colspan=3 class="corAmarela">1 Suite</td>
+            <td colspan=3 class="corAmarela">2 Suite</td>
+            <td colspan=3 class="corAmarela"><center>3</center>Suites</td>
+            <td colspan=2 class="corLaranja">3333-2333</td>
+            <td colspan=2 class="corLaranja">9999-9969</td>
+            <td colspan=2 class="corLaranja">8888-8868</td>
+            <td colspan=5 class="corLaranja">8111-1169</td>
+        </tr>
+        <tr >
+            <th colspan=3 class="corAmarela" style="text-align: left;">Lazer</th>
+            <td colspan=6 class="corAmarela" style="text-align: left;">Piscina, Salão de Festas, Quadra Poliesportiva</td>
+            <td colspan=6 class="corLaranja">Pronto Para Morar</td>
+            <th colspan=5 class="corLaranja">LANÇAMENTO</th>
+        </tr>
+    </table>
+    </div>
+    <!-- Fim questão 2 -->
+
+    <br><br><br><br><br>
+    
+    <!-- Inicio questão 3 -->
+    <div class="q3">
+        <h1>Questão 3:</h1>
+        <form id="form">
+            <p id="pTitle">SISTEMA DE GESTÃO ACADÊMICA</p>
+            <legend><p>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</p></legend>
+            <p>
+            <label for="Login:" class="login">Login:</label>
+            <input type="text" id="login">
+            </p>
+            <p>
+            <label for="password" class="password">Password:</label>
+            <input type="password" id="password">
+            </p>
+            <p>
+            <label for="status" class="status">Status:</label>
+            <select type="status">
+                <option>Inativo</option>
+                <option>Ativo</option>
+            </select>
+            </p>
+            <p>
+                <label for="tipo" class="tipo">Tipo:</label>
+                <input type="radio" id="tenico" name="tipo">Técnico</input>
+                <input type="radio" id="professor" name="tipo">Professor</input>
+                <input type="radio" id="aluno" name="tipo">Aluno</input>
+            </p>
+            <p>
+                <label for="dataCriacao" class="dataCriacao">Data Criação:</label>
+                <input type="text"></input>
+            </p>
+            <p>
+                <label for="perfil" class="perfil">Perfil:</label>
+                <input type="radio" name="perfil">Convidado</input>
+                <input type="radio" name="perfil">Administrador</input>
+            </p>
+            <p class="pObserv">
+                <label for="textbox" class="observ">Observações</label>
+                <textarea rows="10" cols="40" name="text" wrap="hard" style="overflow-y: scroll;"></textarea>
+            </p>
+            <p class="pModulo">
+                <div class="main-modulo">
+                <label for="textbox" class="modulo">Módulos:</label>
+                    <div class="checkboxes">
+                        <input type="checkbox">Compras
+                        <input type="checkbox">Biblioteca
+                        <input type="checkbox">Acadêmico
+                        <input type="checkbox">Biblioteca
+                        <input type="checkbox">Acadêmico
+                    </div>
+                </div>
+            </p>
+            <p>
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Excluir</button>
+            </p>
+        </form>
+    </div>
+    <!-- Fim questão 3 -->
+    <script src="script.js"></script>
+</body>
+</html>
