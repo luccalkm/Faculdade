@@ -1,4 +1,5 @@
-void q7()
+#include <stdio.h>
+int main()
 {
     int numeroConsumidor[100], i = 0, contador = 1;
     float precoKW[100], qtdKW[100];
