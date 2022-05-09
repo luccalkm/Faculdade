@@ -12,7 +12,7 @@ int main()
     // Fim das contas
     printf("O raio eh %.2f.\nSeu perimetro eh %.2f e sua area eh %.2f.", raio, perimetro, area);
 
-    // Pausa sistema
+    // Pausa o sistema
     printf("\n");
     system("pause");
 }

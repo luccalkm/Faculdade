@@ -47,7 +47,7 @@ int main()
         printf("\nTemos: raiz de %.2f a %.fa = %.2f", num1, num2, resposta);
         break;
     default:
-        printf("\nAlgo aconteceu!\nPor favor, tente novamente!");
+        printf("\nAlgo aconteceu!!\nPor favor, tente novamente!");
     }
 
     // Pausa programa

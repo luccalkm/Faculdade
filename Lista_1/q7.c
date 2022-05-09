@@ -20,7 +20,7 @@ int main()
         printf("\nPrimeiro (%.1f)< Segundo (%.1f)", num1, num2);
     }
 
-    // Pausa programa
+    // Pausa o programa
     printf("\n");
     system("pause");
 }

@@ -14,7 +14,7 @@ int main()
     total = valorKW * quantidadeKW;
     total = (total > valorMin) ? printf("\nO codigo do consumidor: #%s\nTotal a pagar %.2f", codigoConsumidor, total) : printf("\nO codigo do consumidor: #%s\nTotal a pagar %.2f", codigoConsumidor, valorMin);
 
-    // Pausa programa
+    // Pausa o programa
     printf("\n");
     system("pause");
 }

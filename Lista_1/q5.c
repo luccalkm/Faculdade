@@ -11,7 +11,7 @@ int main()
     // fim conversão
     printf("\nLogo, %.2f graus Celsius correspondem a %.2f graus Fahrenheit.", grausC, grausF);
 
-    // Pausa sistema
+    // Pausa o sistema
     printf("\n");
     system("pause");
 }

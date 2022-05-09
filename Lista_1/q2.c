@@ -6,7 +6,7 @@ int main()
     scanf("%d", &a); // entrada numero
     printf("\n # Antecessor: %d\n # Numero escolhido: %d\n # Sucessor: %d", a - 1, a, a + 1);
 
-    // Pausa sistema
+    // Pausa o sistema
     printf("\n");
     system("pause");
 }

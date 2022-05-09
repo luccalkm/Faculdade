@@ -63,6 +63,7 @@ int main()
     default:
         printf("Alternativa invalida. Numero escolhido nao eh 1, 2 nem 3.");
     }
+
     // Pausa programa
     printf("\n");
     system("pause");

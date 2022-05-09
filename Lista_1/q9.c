@@ -34,7 +34,7 @@ int main()
         printf("\n%.f > %.f > %.f\nn3 > n2 > n1", n3, n2, n1);
     }
 
-    // Pausa programa
+    // Pausa o programa
     printf("\n");
     system("pause");
 }
