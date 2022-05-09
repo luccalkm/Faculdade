@@ -5,9 +5,11 @@ int main()
 
     while (a != 0)
     {
-        printf("Entre com seus números: ");
+        printf("Entre com seus numeros: ");
         scanf("%d", &a);
         soma += a;
     }
     printf("Soma total: %d", soma);
+    printf("\n");
+    system("pause");
 }

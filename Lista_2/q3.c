@@ -20,4 +20,6 @@ int main()
     }
     printf("\nMaior numero: %d", auxMaior);
     printf("\nMenor numero: %d", auxMenor);
+    printf("\n");
+    system("pause");
 }

@@ -10,7 +10,7 @@ int main()
 
     for (contador = 0; contador < 10; contador++)
     {
-        printf("# Informe seu sexo: "); // Coletar sexo do entrevistado
+        printf("# Informe seu sexo (masculino ou feminino): "); // Coletar sexo do entrevistado
         scanf("%s", sexo);
 
         printf("\n# Código entrevistado #%d\n", contador + 1);

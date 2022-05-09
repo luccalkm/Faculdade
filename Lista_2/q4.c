@@ -40,5 +40,7 @@ int main()
         }
     }
 
-    printf("\nMédia de altura: %.2f\nMaior altura: %.2f\nMenor altura: %.2f\nNumero de mulheres: %d", mediaHomens / 2, maiorAltura, menorAltura, contadorMulheres);
+    printf("\nMedia de altura: %.2f\nMaior altura: %.2f\nMenor altura: %.2f\nNumero de mulheres: %d", mediaHomens / 2, maiorAltura, menorAltura, contadorMulheres);
+    printf("\n");
+    system("pause");
 }
