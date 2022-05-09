@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+#check {
+    display: none;
+}
+
+.images {
+    display: none;
+}
+
+body {
+    background: rgb(248, 248, 248);
+}
+
+/* Header */
+nav {
+    height: 10vh;
+    width: 100%;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 5px 0px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    z-index: 100;
+}
+
+.header-title {
+    font-weight: 600;
+    color: #FBFBFB;
+    font-size: 2.1em;
+    background: -webkit-linear-gradient(#60cfff, #60cfff, #169ad3, #169ad3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul .rodape {
+    display: none;
+}
+
+nav ul li a {
+    color: rgb(22, 154, 211);
+    font-size: 1.1em;
+    border: 3px solid rgb(22, 154, 211);
+    padding: 10px 25px;
+    border-radius: 35px;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    background: rgb(22, 154, 211);
+    color: white;
+    transition: background 0.4s ease;
+}
+
+.menu-btn {
+    cursor: pointer;
+    display: none;
+}
+/* End of header */
+/* Contact */
+.list-box {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #18a7e4;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 100%;
+    box-shadow: 1px 1px 10px #000;
+    font-weight: 600;
+    background: white;
+}
+
+.contact-box h2{
+    font-size: 2rem;
+}
+
+.contact-box img {
+    width: 4rem;
+    height: 4rem;
+    margin: 30px 0px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    background: white;
+    padding: 30px;
+    box-shadow: 1px 1px 10px #000;
+    border-radius: 30px;
+    line-height: 40px;
+}
+
+.bottom h1{
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+/* End of Contact */
+/* Media Query */
+@media (max-width: 1300px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .close-btn {
+        display: none;
+    }
+
+    .images {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: -100%;
+        left: 0;
+        text-align: center;
+        transition: color .5s;
+        z-index: 99;
+        transition: 0.1s ease;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+        border-bottom: 2px solid black;
+    }
+
+    nav ul li {
+        align-items: end;
+    }
+
+    nav ul li a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        border-radius: 0;
+        background: whitesmoke;
+        border: none;
+        font-size: 2rem;
+    }
+
+    nav ul .rodape {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        border: none;
+        padding: 10px 25px;
+        font-size: 1.5rem;
+        border-bottom: 2px solid black;
+        background: #1152a6;
+    }
+
+    nav ul .rodape a {
+        font-size: 2rem;
+        color: whitesmoke;
+        font-weight: 600;
+    }
+
+    a:active,
+    a:hover {
+        background: none;
+        color: rgb(22, 154, 211);
+    }
+
+    .rodape:active,
+    .rodape:hover {
+        background: #0e4387;
+    }
+
+    input {
+        display: block;
+    }
+
+    #check:checked~ul {
+        top: 80px;
+        transition: 0.1s ease;
+    }
+
+    #check:checked~label .menu-btn {
+        display: none;
+    }
+
+    #check:checked~label .close-btn {
+        display: block;
+    }
+
+    .contact-box{
+        width: 20rem;
+        height: 20rem;
+    }
+    .contact-box h2 {
+        font-size: 2rem;
+    }
+    
+    .contact-box img {
+        width: 3rem;
+        height: 3rem;
+        margin: 15px 0px;
+    }
+    .bottom{
+        width: 40rem;
+        height: 30rem;
+        font-size: 1.2rem;
+    }
+}

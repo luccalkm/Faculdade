@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+#check {
+    display: none;
+}
+
+.images {
+    display: none;
+}
+
+body {
+    background: rgb(248, 248, 248);
+}
+
+/* Header */
+nav {
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 5px 0px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    z-index: 100;
+}
+
+.header-title {
+    font-weight: 600;
+    color: #FBFBFB;
+    font-size: 2.1em;
+    background: -webkit-linear-gradient(#60cfff, #60cfff, #169ad3, #169ad3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul .rodape {
+    display: none;
+}
+
+nav ul li a {
+    color: rgb(22, 154, 211);
+    font-size: 1.1em;
+    border: 3px solid rgb(22, 154, 211);
+    padding: 10px 25px;
+    border-radius: 35px;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    background: rgb(22, 154, 211);
+    color: white;
+    transition: background 0.4s ease;
+}
+
+.menu-btn {
+    cursor: pointer;
+    display: none;
+}
+
+/* End of header */
+/* content */
+.content-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.txt {
+    text-align: center;
+    width: 70vw;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 470px 470px;
+    grid-template-rows: 320px 320px;
+    align-items: center;
+    gap: 30px 40px;
+    text-align: left;
+}
+
+.txt1,
+.txt2,
+.txt3,
+.txt4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.1em;
+    background: rgba(255, 255, 255, 0.045);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.txt1:hover,
+.txt2:hover,
+.txt3:hover,
+.txt4:hover {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.img {
+    margin: 0px 25px 0px 25px;
+    align-items: bottom;
+    height: 600px;
+    overflow-y: scroll;
+    width: 500px;
+    background: white;
+    border: 2px solid black;
+}
+
+.imgScroll {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.customized-overflow {
+    min-height: 120px;
+}
+
+.img::-webkit-scrollbar-track {
+    border: 1px solid black;
+    padding: 2px 10px;
+    background: #0d5e81;
+}
+
+.img::-webkit-scrollbar {
+    height: 100px;
+}
+
+.img::-webkit-scrollbar-thumb {
+    background-color: #18a7e4;
+    border-left: 1px solid #000;
+}
+
+/* End of content */
+/* Media Query */
+@media (max-width: 1450px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .close-btn {
+        display: none;
+    }
+
+    .images {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: -100%;
+        left: 0;
+        text-align: center;
+        transition: color .5s;
+        z-index: 99;
+        transition: 0.1s ease;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+        border-bottom: 2px solid black;
+    }
+
+    nav ul li {
+        align-items: end;
+    }
+
+    nav ul li a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        border-radius: 0;
+        background: whitesmoke;
+        border: none;
+        font-size: 2rem;
+    }
+
+    nav ul .rodape {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        border: none;
+        padding: 10px 25px;
+        font-size: 1.5rem;
+        border-bottom: 2px solid black;
+        background: #1152a6;
+    }
+
+    nav ul .rodape a {
+        font-size: 2rem;
+        color: whitesmoke;
+        font-weight: 600;
+    }
+
+    a:active,
+    a:hover {
+        background: none;
+        color: rgb(22, 154, 211);
+    }
+
+    .rodape:active,
+    .rodape:hover {
+        background: #0e4387;
+    }
+
+    input {
+        display: block;
+    }
+
+    #check:checked~ul {
+        top: 80px;
+        transition: 0.1s ease;
+    }
+
+    #check:checked~label .menu-btn {
+        display: none;
+    }
+
+    #check:checked~label .close-btn {
+        display: block;
+    }
+
+    
+}
+/* end */
