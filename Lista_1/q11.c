@@ -42,6 +42,7 @@ int main()
             printf("\nID: %s\nValor de pagamento: %.2f", idConta, valorFinal);
         }
     }
+    // Pausa programa
     printf("\n");
     system("pause");
 }

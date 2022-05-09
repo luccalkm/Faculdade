@@ -70,6 +70,7 @@ int main()
     {
         printf("O preco final do seu carro eh R$ %.2f", valorCarro);
     }
+    // Pausa programa
     printf("\n");
     system("pause");
 }

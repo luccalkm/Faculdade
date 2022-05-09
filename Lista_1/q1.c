@@ -10,6 +10,7 @@ int main()
     a = b;
     b = aux;
     printf("Valores trocados: a = %d e b = %d.", a, b);
+
     // Pausar programa
     printf("\n");
     system("pause");

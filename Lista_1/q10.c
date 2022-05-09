@@ -43,12 +43,14 @@ int main()
         break;
     case '#':
 
-            resposta = pow(num1, 1 / num2);
+        resposta = pow(num1, 1 / num2);
         printf("\nTemos: raiz de %.2f a %.fa = %.2f", num1, num2, resposta);
         break;
     default:
         printf("\nAlgo aconteceu!\nPor favor, tente novamente!");
     }
+
+    // Pausa programa
     printf("\n");
     system("pause");
 }

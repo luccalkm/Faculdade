@@ -57,6 +57,8 @@ int main()
         }
     }
     printf("Obrigado por utilizar a calculadora!");
+
+    // Pausa programa
     printf("\n");
     system("pause");
 }

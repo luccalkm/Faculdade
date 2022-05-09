@@ -33,6 +33,8 @@ int main()
     {
         printf("\n%.f > %.f > %.f\nn3 > n2 > n1", n3, n2, n1);
     }
+
+    // Pausa programa
     printf("\n");
     system("pause");
 }

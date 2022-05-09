@@ -21,4 +21,8 @@ int main()
     {
         printf("\nNota 1: %.1f\nNota 2: %.1f\nMedia: %.1f\nVoce podera fazer a AV3.", nota1, nota2, media);
     }
+
+    // Pausa programa
+    printf("\n");
+    system("pause");
 }

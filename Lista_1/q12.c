@@ -53,6 +53,7 @@ int main()
     default:
         printf("\nERROR: Algo deu errado!");
     }
+    // Pausa programa
     printf("\n");
     system("pause");
 }
