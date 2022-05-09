@@ -16,11 +16,11 @@ int main()
         printf("Insira o sexo (Masculino ou Feminino): ");
         scanf("%s", sexo);
 
-        if (strcmp(sexo, "Masculino") == 0 || strcmp(sexo, "masculino") == 0)
+        if (strcmp(sexo, "masculino") == 0 || strcmp(sexo, "Masculino") == 0)
         {
             mediaHomens += altura[i]; // se for masculino, soma a altura
         }
-        else if (strcmp(sexo, "Feminino") == 0 || strcmp(sexo, "feminino") == 0)
+        else if (strcmp(sexo, "feminino") == 0 || strcmp(sexo, "Feminino") == 0)
         {
             contadorMulheres++; // se for feminino, adiciona um no contador de meninas
         }

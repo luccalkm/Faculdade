@@ -1,29 +1,29 @@
 #include <stdio.h>
 int main()
 {
-    int numeroConsumidor, contaEntradas = 0;
+    int numeroConsumidor, contaPessoas = 0;
     float precoKW, qtdKW, maior = 0, menor = 0, mediaConsumo = 0;
 
     printf("Inserir um numero do consumidor zero (0) encerra o programa.\n");
 
     do
     {
-        printf("Insira o numero do consumidor: ");
+        printf("\nInsira o numero do consumidor: ");
         scanf("%d", &numeroConsumidor);
 
         if (numeroConsumidor != 0)
         {
-            printf("\nInsira o preco do do kWh: ");
+            printf("Insira o preco do do kWh: ");
             scanf("%f", &precoKW);
-            printf("\nInsira a quantidade gasta de kWh no mes: ");
+            printf("Insira a quantidade gasta de kWh no mes: ");
             scanf("%f", &qtdKW);
 
             /* Total a pagar do consumidor da vez */
             float total = 0;
             total = precoKW * qtdKW;
-            printf("O total apagar do consumidor #%d: %.f\n", numeroConsumidor, total);
+            printf("\nO total apagar do consumidor #%d: %.f\n", numeroConsumidor, total);
 
-            /* Maior e menor consumos verificados ao longo das entradas */
+            /* Maior e menor consumos verificados ao longo das PessoascontaPessoas */
             if (qtdKW > maior)
             {
                 maior = qtdKW;
@@ -40,15 +40,15 @@ int main()
 
             /* Soma geral dos consumos */
             mediaConsumo += qtdKW;
-            contaEntradas++;
+            contaPessoas++;
         }
         else
         {
             break;
         }
     } while (numeroConsumidor != 0);
-    mediaConsumo = mediaConsumo / contaEntradas;
-    printf("Maior dos Consumos # %.2f\nMenor dos Consumos # %.2f\nMedia dos Consumos # %.2f\n", maior, menor, mediaConsumo);
+    mediaConsumo = mediaConsumo / contaPessoas;
+    printf("\nMaior dos Consumos # %.2f\nMenor dos Consumos # %.2f\nMedia dos Consumos # %.2f\n", maior, menor, mediaConsumo);
     printf("\n");
     system("pause");
 }

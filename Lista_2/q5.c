@@ -17,7 +17,7 @@ int main()
         printf("# Satifeito com o novo produto?\nResponda com [S] ou [N]: "); // Coletar resposta
         scanf(" %c", &resposta[contador]);
 
-        if (resposta[contador] == 'S' || resposta[contador] == 's')
+        if (resposta[contador] == 's' || resposta[contador] == 'S')
         {
             if (strcmp(sexo, "Masculino") == 0 || strcmp(sexo, "masculino") == 0)
             {
@@ -28,7 +28,7 @@ int main()
                 simF++;
             }
         }
-        else if (resposta[contador] == 'N' || resposta[contador] == 'n')
+        else if (resposta[contador] == 'n' || resposta[contador] == 'N')
         {
             if (strcmp(sexo, "Masculino") == 0 || strcmp(sexo, "masculino") == 0)
             {
@@ -42,4 +42,6 @@ int main()
         system("cls");
     }
     printf("O total de sim: %d\nO total de nao: %d\nPorcentagem de homens que votaram sim: %d%%.\nPorcentagem de mulheres que votaram sim: %d%%.", simM + simF, naoM + naoF, simM * 10, simF * 10);
+    printf("\n");
+    system("pause");
 }
